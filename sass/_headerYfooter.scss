@@ -1,0 +1,91 @@
+/* 
+.messi{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+} */
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+    img{
+        width: 100%;
+        height: 6rem;
+    }
+}
+
+
+
+
+/*-------footer--------*/
+footer{
+    background-color: rgba(0, 0, 0, 0.318);
+    
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);    
+    align-items: center;
+    justify-items: center;
+    /* height: 90%; */
+    height: 110vh; 
+
+    p{
+        color:black
+    }
+   
+
+    &__ubicacion{
+        margin-top: 20px;
+
+        p{
+            text-align: center;
+            color: black;
+            font-weight: 600;
+
+        }
+    }
+
+    &__iconos{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+        img{
+           /*  margin-top: -80px; */
+            height: 9rem;
+        }
+
+        &--social{
+
+            a{
+                text-decoration: none;
+            }
+
+            i{
+                color: black;
+                margin-right: 20px;
+                font-size: 60px;
+            }
+        }
+
+        p{
+            text-align: center;
+            color: black;
+            font-weight: 600;
+        }
+    }
+}
+
+.line {
+   /*  margin-top: -200px;/*  
+   /*
+    margin: auto; */
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background: black;
+    box-shadow: $sombreado;
+    }
+

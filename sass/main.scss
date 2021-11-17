@@ -1,0 +1,105 @@
+$sombreado:0 0 8px 0 rgba(0, 0, 0, .5);
+$fuenteAzul: rgb(24, 33, 99);
+$borde: 20px;
+
+@import "./principal";
+@import "./headerYfooter";
+@import "./exterior";
+@import "./interior";
+@import "./servicios";
+@import "./nosotros";
+@import "./contacto";
+
+
+body {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+   /*  @include laptop {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+
+    }
+
+    @include movil {
+        overflow-x: hidden;
+    }
+ */
+    main {
+        border-bottom: tomato 1px solid;     
+        padding: 0 150px;
+
+      /*   @include laptop {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            
+            padding: 0 20px;
+        }
+
+        @include movil {
+            overflow-x: hidden;
+            overflow-y: hidden;
+         
+            padding: 0 10px;
+
+        } */
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: underline rgba(250, 144, 125, 0.605) solid 3px;
+    }
+
+    h2 {
+        color: $fuenteAzul;
+        padding: 5px 0;
+
+     /*    @include tablet {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        @include movil {
+            font-size: 1.8rem;
+            font-weight: bold;
+        } */
+
+    }
+
+    h3 {
+        color: $fuenteAzul;
+        padding: 5px 0;
+/* 
+        @include tablet {
+            font-size: 2rem;
+            text-decoration: underline;
+        } */
+    }
+
+    h4,
+    h5 {
+        color: $fuenteAzul;
+        padding: 5px 0;
+    }
+
+    p {
+        color: rgb(67, 77, 23);
+        padding: 10px 0;
+        font-size: 1.1rem;
+/* 
+        @include tablet {
+            font-size: 1.3rem;
+        }
+
+        @include movil {
+            font-size: 1rem;
+        } */
+    }
+
+   
+}

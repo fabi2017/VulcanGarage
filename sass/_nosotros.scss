@@ -1,0 +1,27 @@
+
+
+
+
+.slider2 {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: $sombreado;
+}
+
+.carrusel {
+    
+    height: 100%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    h5{
+        
+        color: white;
+    }
+}

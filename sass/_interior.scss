@@ -1,0 +1,36 @@
+
+.galeria2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+
+}
+
+.prodInt {
+    width: 320px;
+    box-shadow: $sombreado;
+    height: 300px;
+    margin-bottom: 60px;
+
+/* 
+    @include movil{
+        height: 200px;
+    }
+ 
+    &:hover {
+        z-index: 1;
+        animation: kenburns-top 3s ease-out both;
+    } */
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h5 {
+        text-align: center;
+        box-shadow: $sombreado;
+        background-color: rgba(251, 9, 33, 0.167);
+    }
+}
