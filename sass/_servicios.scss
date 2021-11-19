@@ -6,6 +6,8 @@
     grid-row-gap: 0px;
     margin-bottom: 30px;
 
+    
+
 
     &--img {
 
@@ -14,6 +16,13 @@
             width: 100%;
             object-fit: cover;
             height: 20rem;
+            margin-top: 30px;
+
+            @include laptop{
+
+                width: 110%;
+                height: 25rem;
+            }
 
         }
 
@@ -26,6 +35,12 @@
             width: 100%;
             object-fit: cover;
             height: 20rem;
+
+            @include laptop{
+
+                width: 110%;
+                height: 25rem;
+            }
 
 
         }

@@ -1,76 +1,109 @@
-/* 
-.messi{
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-} */
-.navbar-brand{
+@import "./mediaqueries";
+
+
+.navbar-brand {
     margin: 0;
     padding: 0;
-    img{
+
+    img {
         width: 100%;
         height: 6rem;
     }
 }
 
 
+.nav-link {
+
+    @include laptop {
+        font-size: 1.2rem;
+    }
+
+}
+
 
 
 /*-------footer--------*/
-footer{
+footer {
     background-color: rgba(0, 0, 0, 0.318);
-    
+    height: 100%;
+
 }
 
 .grilla {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);    
+    grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    /* height: 90%; */
-    height: 110vh; 
+    height: 110vh;
 
-    p{
-        color:black
+    @include laptop {
+        height: 100%;
     }
-   
 
-    &__ubicacion{
+
+    p {
+        color: black
+    }
+
+
+    &__ubicacion {
         margin-top: 20px;
 
-        p{
+        @include laptop {
+            height: 90%;
+            margin-top: 0px;
+        }
+
+
+        p {
             text-align: center;
             color: black;
             font-weight: 600;
 
         }
+
+
+        iframe {
+            width: 1200px;
+            height: 350px;
+            border: 0;
+
+            @include laptop {
+                width: 800px;
+            }
+        }
     }
 
-    &__iconos{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+    &__iconos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        img{
-           /*  margin-top: -80px; */
+        @include laptop {
+            height: 30%;
+            margin-top: -50px;
+        }
+
+        img {
+            /*  margin-top: -80px; */
             height: 9rem;
         }
 
-        &--social{
+        &--social {
 
-            a{
+            a {
                 text-decoration: none;
             }
 
-            i{
+            i {
                 color: black;
                 margin-right: 20px;
                 font-size: 60px;
             }
         }
 
-        p{
+        p {
             text-align: center;
             color: black;
             font-weight: 600;
@@ -79,13 +112,16 @@ footer{
 }
 
 .line {
-   /*  margin-top: -200px;/*  
-   /*
-    margin: auto; */
+    margin: auto;
     width: 100%;
     max-width: 1200px;
     height: 1px;
     background: black;
     box-shadow: $sombreado;
+
+    @include laptop {
+        width: 900px;
+
     }
 
+}
