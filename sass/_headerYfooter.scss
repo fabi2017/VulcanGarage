@@ -21,6 +21,25 @@
 }
 
 
+.navbar-nav{
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 1.2rem;
+    }
+}
+
+.dropdown-menu{
+    @include tablet{
+        font-size: 1.2rem;
+       
+    }
+}
+
+
+
 
 /*-------footer--------*/
 footer {
@@ -72,6 +91,10 @@ footer {
             @include laptop {
                 width: 800px;
             }
+
+            @include tablet {
+                width: 550px;
+            }
         }
     }
 
@@ -86,8 +109,7 @@ footer {
         }
 
         img {
-            /*  margin-top: -80px; */
-            height: 9rem;
+           height: 9rem;
         }
 
         &--social {
@@ -121,6 +143,11 @@ footer {
 
     @include laptop {
         width: 900px;
+
+    }
+
+    @include tablet {
+        width: 500px;
 
     }
 

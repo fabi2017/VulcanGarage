@@ -6,10 +6,20 @@
     grid-row-gap: 0px;
     margin-bottom: 30px;
 
-    
 
+    @include tablet {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
 
     &--img {
+
+        @include tablet {
+            
+        }
 
 
         img {
@@ -18,10 +28,15 @@
             height: 20rem;
             margin-top: 30px;
 
-            @include laptop{
+            @include laptop {
 
                 width: 110%;
                 height: 25rem;
+            }
+
+            @include tablet {
+
+                width: 100%;
             }
 
         }
@@ -31,32 +46,44 @@
     &--img2 {
         margin-top: 250px;
 
+        @include tablet{
+            margin: 20px 0 ;
+        }
+
         img {
             width: 100%;
             object-fit: cover;
             height: 20rem;
 
-            @include laptop{
+            @include laptop {
 
                 width: 110%;
                 height: 25rem;
             }
 
+            @include tablet {
+
+                width: 100%;
+            }
 
         }
 
     }
 
 
-    &--text{
+    &--text {
         margin-top: 100px;
+
+        @include tablet {
+            margin: 0;
+        }
 
         p {
             text-align: center;
             font-size: 1.2rem;
-    
+
         }
-    
+
         ul {
             text-align: center;
             list-style: none;

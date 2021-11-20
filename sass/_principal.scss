@@ -30,13 +30,13 @@
 
 }
 
-.contenedor-img {
-    display: -webkit-flex;
+.cards {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
 
+   
 
 }
 
@@ -50,8 +50,17 @@
     margin-bottom: 60px;
 
     @include laptop {
+        
         margin-left: 30px;
     }
+
+    @include tablet {
+        margin-left: 10px;
+        height: 350px;
+    }
+
+
+
 
     img {
         height: 100%;
@@ -81,6 +90,12 @@
     }
 
 
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
     img {
         height: 80px;
 
@@ -89,12 +104,21 @@
             margin-top: 10px;
         }
 
+        @include tablet {
+            width: 70px;
+        }
+
     }
 
     &__text {
         font-weight: bold;
         margin-right: 30px;
         padding: 40px 20px 0 10px;
+
+        @include tablet {
+           padding: 10px 0;
+           padding-left: 30px;
+        }
 
     }
 }
