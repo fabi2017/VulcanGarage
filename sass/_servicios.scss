@@ -17,9 +17,6 @@
 
     &--img {
 
-        @include tablet {
-            
-        }
 
 
         img {
@@ -37,6 +34,11 @@
             @include tablet {
 
                 width: 100%;
+            }
+
+            @include movil {
+
+                height: 19rem;
             }
 
         }
@@ -64,6 +66,12 @@
             @include tablet {
 
                 width: 100%;
+            }
+
+            
+            @include movil {
+
+                height: 19rem;
             }
 
         }

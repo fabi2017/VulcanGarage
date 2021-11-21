@@ -57,17 +57,14 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    height: 110vh;
+    height: 130vh;
 
-    @include laptop {
-        height: 100%;
+    
+
+    @include movil {
+        height: 125vh;
     }
 
-
- /*    p {
-        color: black;     
-        
-    } */
 
 
     &__ubicacion {
@@ -79,13 +76,6 @@ footer {
         }
 
 
-       /*  p {
-            text-align: center;
-            color: black;
-            font-weight: 600;
-
-           
-        } */
 
 
         iframe {
@@ -98,7 +88,7 @@ footer {
             }
 
             @include tablet {
-                width: 120%;
+                width: 520px;
             }
 
 
@@ -121,7 +111,7 @@ footer {
 
         @include movil {
             height: 10%;
-            margin-top: -270px;
+            margin-top: -80px;
         }
 
         img {
@@ -142,14 +132,14 @@ footer {
                 color: black;
                 margin-right: 20px;
                 font-size: 60px;
+
+                @include movil {
+                    margin-top: 20px;
+                }
             }
         }
 
-       /*  p {
-            text-align: center;
-            color: black;
-            font-weight: 600;
-        } */
+      
     }
 }
 
@@ -163,17 +153,19 @@ footer {
 
     @include laptop {
         width: 900px;
+        margin-top: 100px;
 
     }
 
     @include tablet {
         width: 500px;
+        
 
     }
 
     @include movil {
         width: 300px;
-        margin-top: -100px;
+        margin-top: 120px;
 
     }
 
@@ -194,6 +186,5 @@ footer {
 
     color: black;
     @include movil {
-        margin-top: -120px;
     }
 }
