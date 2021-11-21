@@ -60,6 +60,12 @@
     }
 
 
+    @include tablet {
+        margin-left: 10px;
+        height: 250px;
+    }
+
+
 
 
     img {

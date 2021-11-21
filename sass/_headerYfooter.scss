@@ -7,6 +7,10 @@
 
     img {        
         height: 6rem;
+
+        @include movil{
+            height: 5rem;
+        }
     }
 }
 
@@ -60,9 +64,10 @@ footer {
     }
 
 
-    p {
-        color: black
-    }
+ /*    p {
+        color: black;     
+        
+    } */
 
 
     &__ubicacion {
@@ -74,12 +79,13 @@ footer {
         }
 
 
-        p {
+       /*  p {
             text-align: center;
             color: black;
             font-weight: 600;
 
-        }
+           
+        } */
 
 
         iframe {
@@ -92,7 +98,12 @@ footer {
             }
 
             @include tablet {
-                width: 550px;
+                width: 120%;
+            }
+
+
+            @include movil {
+                width: 100%;
             }
         }
     }
@@ -107,8 +118,18 @@ footer {
             margin-top: -50px;
         }
 
+
+        @include movil {
+            height: 10%;
+            margin-top: -270px;
+        }
+
         img {
            height: 9rem;
+
+           @include movil{
+               height: 7rem;
+           }
         }
 
         &--social {
@@ -124,11 +145,11 @@ footer {
             }
         }
 
-        p {
+       /*  p {
             text-align: center;
             color: black;
             font-weight: 600;
-        }
+        } */
     }
 }
 
@@ -150,4 +171,29 @@ footer {
 
     }
 
+    @include movil {
+        width: 300px;
+        margin-top: -100px;
+
+    }
+
+}
+
+.text{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+
+    @include movil{
+        font-size: 1.2rem;
+    }
+}
+
+
+.text2{
+
+    color: black;
+    @include movil {
+        margin-top: -120px;
+    }
 }

@@ -60,6 +60,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .contImag {
+    margin-left: 10px;
+    height: 250px;
+  }
+}
+
 .contImag img {
   height: 100%;
   width: 100%;
@@ -145,6 +152,12 @@
   height: 6rem;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-brand img {
+    height: 5rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .nav-link {
     font-size: 1.2rem;
@@ -191,6 +204,10 @@ footer {
           align-items: center;
   justify-items: center;
   height: 110vh;
+  /*    p {
+        color: black;     
+        
+    } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -199,12 +216,15 @@ footer {
   }
 }
 
-.grilla p {
-  color: black;
-}
-
 .grilla__ubicacion {
   margin-top: 20px;
+  /*  p {
+            text-align: center;
+            color: black;
+            font-weight: 600;
+
+           
+        } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -212,12 +232,6 @@ footer {
     height: 90%;
     margin-top: 0px;
   }
-}
-
-.grilla__ubicacion p {
-  text-align: center;
-  color: black;
-  font-weight: 600;
 }
 
 .grilla__ubicacion iframe {
@@ -234,7 +248,13 @@ footer {
 
 @media screen and (max-width: 768px) {
   .grilla__ubicacion iframe {
-    width: 550px;
+    width: 120%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .grilla__ubicacion iframe {
+    width: 100%;
   }
 }
 
@@ -249,6 +269,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*  p {
+            text-align: center;
+            color: black;
+            font-weight: 600;
+        } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -258,8 +283,21 @@ footer {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .grilla__iconos {
+    height: 10%;
+    margin-top: -270px;
+  }
+}
+
 .grilla__iconos img {
   height: 9rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .grilla__iconos img {
+    height: 7rem;
+  }
 }
 
 .grilla__iconos--social a {
@@ -270,12 +308,6 @@ footer {
   color: black;
   margin-right: 20px;
   font-size: 60px;
-}
-
-.grilla__iconos p {
-  text-align: center;
-  color: black;
-  font-weight: 600;
 }
 
 .line {
@@ -297,6 +329,35 @@ footer {
 @media screen and (max-width: 768px) {
   .line {
     width: 500px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .line {
+    width: 300px;
+    margin-top: -100px;
+  }
+}
+
+.text {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .text {
+    font-size: 1.2rem;
+  }
+}
+
+.text2 {
+  color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .text2 {
+    margin-top: -120px;
   }
 }
 
@@ -572,6 +633,12 @@ body main {
     overflow-x: hidden;
     overflow-y: hidden;
     padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body main {
+    padding: 0 20px;
   }
 }
 
